@@ -1,9 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home - Ellis Keener-LaCroix</title>
-</head>
-<body>
-    <h1>Body</h1>
-</body>
-</html>
+{% extends 'base/dependencies.html' %}
+{% load static %}
+
+{% block depHead %}
+    <title>Ellis Keener-LaCroix</title>
+{% endblock depHead %}
+
+{% block depBody %}
+{% include 'base/navbar.html' %}
+<div id="homeContainer">
+    <div class="fill">
+        <div id="homeMain">
+            <h1>Ellis Keener-LaCroix</h1>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary btn-lg homeButton">Resume</a>
+
+
+
+    <a href="{% url 'projects' %}" class="btn btn-primary btn-lg homeButton">Projects</a>
+
+    <h1 class="fill">About Me</h1>
+
+</div>
+
+
+
+
+{% endblock depBody %}
