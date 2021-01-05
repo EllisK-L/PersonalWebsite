@@ -6,7 +6,161 @@
 {% endblock depHead %}
 
 {% block depBody %}
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark" id="projectsBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Ellis Keener-LaCroix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#projectContainer">Jump</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dataBase">CPA Database</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Space-Craft</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Other?</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- <div id="smallNameFill">
+        <div class="nameCircle" id="projectName">
+            <p>Ellis Keener-LaCroix</p>
+        </div>
+    </div> -->
+
+<div id="projectContainer">
+    
+    <div class="projectDiv">
+        <h2 id="jump">Jump</h2>
+        <div class="projectInnerDiv aboutProject">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie odio id nulla pharetra, ac efficitur mi finibus. Quisque pulvinar, urna sit amet laoreet laoreet, orci velit vehicula lectus, ut condimentum tortor eros in turpis. Donec aliquam arcu in elit molestie, nec volutpat purus sodales. Aliquam cursus bibendum odio, eget commodo ipsum sodales eu. Nullam lacinia ultrices risus non fermentum. Etiam a urna gravida, efficitur felis vitae, feugiat orci. Vestibulum eu dui metus. Morbi semper ipsum ut ex volutpat, sit amet gravida odio feugiat. Aliquam ultrices maximus imperdiet. Nam sed facilisis eros.</p>
+        </div>
+        <div class="projectInnerDiv pictureProject">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'projects/paint_start.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/paint_character.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/paint_level.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/paint_jumping.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/paint_death.png' %}" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+        <div class="linksProject">
+            <div class="fill">
+                <a id="dataBase" href=""><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
 
 
 
+    <div class="projectDiv">
+        <h2>CPA DataBase</h2>
+        <div class="projectInnerDiv aboutProject">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie odio id nulla pharetra, ac efficitur mi finibus. Quisque pulvinar, urna sit amet laoreet laoreet, orci velit vehicula lectus, ut condimentum tortor eros in turpis. Donec aliquam arcu in elit molestie, nec volutpat purus sodales. Aliquam cursus bibendum odio, eget commodo ipsum sodales eu. Nullam lacinia ultrices risus non fermentum. Etiam a urna gravida, efficitur felis vitae, feugiat orci. Vestibulum eu dui metus. Morbi semper ipsum ut ex volutpat, sit amet gravida odio feugiat. Aliquam ultrices maximus imperdiet. Nam sed facilisis eros.</p>
+        </div>
+        <div class="projectInnerDiv pictureProject">
+            <div id="carouselExampleControlsDataBase" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'projects/DataBase_Home.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/DataBase_Item.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'projects/DataBase_Item_Details.png' %}" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControlsDataBase" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControlsDataBase" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="linksProject">
+        <div class="fill">
+            <a href="https://github.com/EllisK-L/CPA_DataBase"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="projectDiv">
+        <h2 id="spacecraft">Dal ROV Website</h2>
+        <div class="projectInnerDiv aboutProject">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie odio id nulla pharetra, ac efficitur mi finibus. Quisque pulvinar, urna sit amet laoreet laoreet, orci velit vehicula lectus, ut condimentum tortor eros in turpis. Donec aliquam arcu in elit molestie, nec volutpat purus sodales. Aliquam cursus bibendum odio, eget commodo ipsum sodales eu. Nullam lacinia ultrices risus non fermentum. Etiam a urna gravida, efficitur felis vitae, feugiat orci. Vestibulum eu dui metus. Morbi semper ipsum ut ex volutpat, sit amet gravida odio feugiat. Aliquam ultrices maximus imperdiet. Nam sed facilisis eros.</p>
+        </div>
+        <div class="projectInnerDiv pictureProject">
+            <div id="carouselExampleControlsDataBase" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'projects/ROV_Home.png' %}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+        </div>
+    <div class="linksProject">
+        <div class="fill">
+            <a href="https://github.com/EllisK-L/CPA_DataBase"><i class="fab fa-github"></i></a>
+            <a href="https://dalrov.happyrobotics.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+ 
+
+
+
+</div>
 {% endblock depBody %}

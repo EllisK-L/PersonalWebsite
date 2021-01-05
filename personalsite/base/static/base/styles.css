@@ -29,7 +29,7 @@ body{
 }
 
 
-#homeMain h1{
+.nameCircle h1{
   line-height: 30rem;
 
 }
@@ -58,7 +58,7 @@ body{
   flex-wrap: wrap;
 }
 
-#homeMain{
+.nameCircle{
 
   width: 30rem;
   height: 30rem;
@@ -73,13 +73,91 @@ body{
   -webkit-box-shadow: 0px 0px 39px -9px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 39px -9px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 39px -9px rgba(0,0,0,0.75);
-  animation: move 5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  animation: move 10s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
+#projectsBar{
+  background-color: var(--main-bg-colour) !important;
+  border-color: whitesmoke;
+  border-bottom: var(--main-bg-colour);
+  border-style: solid;
+  position: fixed;
+  padding: 12px;
+  margin-bottom: 100px;
+
+}
+#projectName{
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+#projectName p{
+  line-height: 10rem;
+}
+
 .fill{
   width: 100%;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 4rem;
+}
+#smallNameFill{
+  text-align: right;
+}
+.sideBar{
+  background-color: gray;
+
+}
+#projectContainer{
+  flex-wrap: wrap;
+  padding-top: 100px;
+  display: flex;
+}
+.projectDiv{
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "header header"
+                        "about image"
+                        "footerl image";
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.projectInnerDiv{
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  background-color: #404040;
+}
+
+#projectContainer h2{
+  grid-area: header;
+}
+.pictureProject{
+  grid-area: image;
+}
+.linksProject{
+  justify-self: end;
+
+}
+.fa-external-link-alt{
+  font-size: 2rem;
+}
+.fill .fab{
+  font-size: 40px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.fill a{
+  transition: .3s;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.fill a:hover{
+  transition: .3s;
+  color: gray;
 }
 
 @keyframes move{
@@ -94,3 +172,10 @@ body{
     box-shadow: 0px 0px 88px 25px rgba(0,0,0,0.75);
   }
   }
+
+
+
+
+
+
+
