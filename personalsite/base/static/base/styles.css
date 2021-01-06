@@ -90,15 +90,15 @@ body{
   height: 10rem;
   margin-right: 2rem;
 }
-#projectName p{
+/* #projectName p{
   line-height: 10rem;
-}
+} */
 
 .fill{
   width: 100%;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 #smallNameFill{
   text-align: right;
@@ -159,6 +159,7 @@ body{
   transition: .3s;
   color: gray;
 }
+
 
 @keyframes move{
   0%{
