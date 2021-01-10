@@ -31,13 +31,14 @@
         </a>
     </div>
 
+    {% for experience in experiences %}
     <div class="about">
         <div class="aboutSection">
-            <h3>Hello</h3>
-            <p>This is the work I did</p>
+            <h3> {{experience.heading}} </h3>
+            <p>{{ experience.content }}</p>
         </div>
     </div>
-
+    {% endfor %}
 </div>
 
 
