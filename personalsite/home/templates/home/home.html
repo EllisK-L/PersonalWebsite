@@ -31,14 +31,23 @@
         </a>
     </div>
 
-    {% for experience in experiences %}
     <div class="about">
+    {% for experience in experiences %}
+
         <div class="aboutSection">
-            <h3> {{experience.heading}} </h3>
-            <p>{{ experience.content }}</p>
+            <div>
+                <img class="aboutPhoto" src="media/{{ experience.photo }}" alt="">
+            </div>
+            <div>
+                <h3> {{experience.heading}} </h3>
+                <h5 class="aboutSubHeading">{{ experience.subHeading }}</h5>
+                <p>{{ experience.content }}</p>
+            </div>
+
         </div>
-    </div>
+
     {% endfor %}
+</div>
 </div>
 
 
