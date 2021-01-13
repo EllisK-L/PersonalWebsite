@@ -180,9 +180,24 @@ body{
   color: darkgray;
 }
 .aboutPhoto{
-  width: 100px;
+  height: 100%;
   margin-right: 1rem;
 }
+.aboutPhotoDiv{
+  width: 40%;
+  text-align: center;
+}
+.aboutContent{
+  width: 70%;
+
+}
+@media (max-width: 1780px) {
+  .aboutPhoto{
+    height: auto;
+    width: 70%;
+  }
+}
+
 
 @keyframes move{
   0%{

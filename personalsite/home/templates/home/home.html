@@ -13,7 +13,7 @@
             <h1>Ellis Keener-LaCroix</h1>
         </div>
     </div>
-    <p>Hello?</p>
+    <p>Hello! My name is Ellis Keener-LaCroix, I am an aspiring software developer looking for a Co-op position for the summer of 2021 </p>
     <div class="fill">
         <a href="https://github.com/EllisK-L"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ellis-k-01905613b/"><i class="fab fa-linkedin-in"></i></a>
@@ -24,30 +24,36 @@
 
     <a href="{% url 'projects' %}" class="btn btn-primary btn-lg homeButton">Projects</a>
     <div id="aboutHead" class="fill">
-        <a href="#aboutHead">
+        <a href="#aboutMe">
         <i class="fas fa-arrow-down"></i>
         <h2>About Me</h2>
         <i class="fas fa-arrow-down"></i>
         </a>
     </div>
 
+    <section id="aboutMe">
     <div class="about">
     {% for experience in experiences %}
 
         <div class="aboutSection">
-            <div>
-                <img class="aboutPhoto" src="media/{{ experience.photo }}" alt="">
+            <div class="aboutPhotoDiv">
+                <a href="{{ experience.link }}"><img class="aboutPhoto" src="media/{{ experience.photo }}" alt=""></a>
             </div>
-            <div>
+            <div class="aboutContent">
                 <h3> {{experience.heading}} </h3>
-                <h5 class="aboutSubHeading">{{ experience.subHeading }}</h5>
+                <a href="{{ experience.link }}"><h5 class="aboutSubHeading">{{ experience.subHeading }}</h5></a>
+                <small>{{ experience.date }}</small>
+                <br>
+                <br>
                 <p>{{ experience.content }}</p>
             </div>
 
         </div>
 
     {% endfor %}
+
 </div>
+</section>
 </div>
 
 

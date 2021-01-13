@@ -6,3 +6,5 @@ class Experience(models.Model):
     content = models.TextField()
     typeof = models.CharField(max_length=15)
     photo = models.ImageField(upload_to="home", blank=True, null=True)
+    date = models.CharField(max_length=50, blank=True, null=True)
+    link = models.CharField(max_length=1000, blank=True, null=True)
