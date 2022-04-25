@@ -18,7 +18,7 @@
         <a href="https://github.com/EllisK-L"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ellis-k-01905613b/"><i class="fab fa-linkedin-in"></i></a>
     </div>
-    <a href="#" class="btn btn-primary btn-lg homeButton">Resume</a>
+    <a href="{% static 'home/Ellis_Keener-LaCroix_Resume.pdf' %}" class="btn btn-primary btn-lg homeButton">Resume</a>
 
 
 
@@ -45,7 +45,7 @@
                 <small>{{ experience.date }}</small>
                 <br>
                 <br>
-                <p>{{ experience.content }}</p>
+                <p>{{ experience.content | linebreaks }}</p>
             </div>
 
         </div>
