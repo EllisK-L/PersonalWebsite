@@ -1,2 +1,5 @@
 *.pyc
 venv/
+personalsite/media/**
+personalsite/db.sqlite3
+personalsite/static/
